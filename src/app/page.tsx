@@ -13,8 +13,8 @@ export default function PawPointLanding() {
     <div className="min-h-screen bg-[#F4D7B6] text-[#5C3D2E]">
       <Navbar />
 
-      {/* main area */}
-      <section className="py-12 px-6 md:px-16 flex flex-col md:flex-row gap-8 items-center">
+      {/* hero page */}
+      <section className="py-20 px-6 md:px-16 flex flex-col md:flex-row gap-8 items-center">
         <HeroSection />
         
         <div className="md:w-1/2 flex justify-center">
@@ -34,6 +34,7 @@ export default function PawPointLanding() {
       </div>
       
       </section>
+      {/* Features page */}
       <FeaturesSection />
     </div>
   );
