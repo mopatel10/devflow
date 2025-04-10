@@ -1,7 +1,7 @@
   export default function HowItWorks() {
       
       return(
-      <section id="how-it-works" className="py-12 px-6 md:px-16">
+      <section id="how-it-works" className="py-12 px-6 md:px-16 bg-[#f6f7ec] rounded-t-[24px] mt-[-1px]">
         <h2 className="text-3xl font-bold text-center text-[#D45D27] mb-12">How It Works</h2>
         <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
           <div className="flex flex-col items-center md:w-1/4">

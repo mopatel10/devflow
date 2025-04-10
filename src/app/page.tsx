@@ -58,9 +58,12 @@ export default function PawPointLanding() {
         </div>
       </section>
       
-      {/* Features page */}
       <FeaturesSection />
-      <HowItWorks />
+      <div className="bg-[#514236]">
+  <HowItWorks />
+</div>
+
+
     </div>
   );
 }

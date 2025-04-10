@@ -21,7 +21,7 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-4">
                 <div className={`flex gap-4 lg:gap-8 font-medium`}>
                     <a href="#features" className="hover:text-[#D45D27] transition-colors">Features</a>
-                    <a href="#how-it-works" className="hover:text-[#D45D27] transition-colors">Link</a>
+                    <a href="#how-it-works" className="hover:text-[#D45D27] transition-colors">How it Works</a>
                     <a href="#pricing" className="hover:text-[#D45D27] transition-colors">Link</a>
                     <a href="#testimonials" className="hover:text-[#D45D27] transition-colors">Link</a>
                 </div>
@@ -49,7 +49,7 @@ export default function Navbar() {
             {mobileMenuOpen && (
                 <div className="w-full md:hidden mt-4 pb-3 flex flex-col gap-4">
                     <a href="#features" className="hover:text-[#D45D27] transition-colors">Features</a>
-                    <a href="#how-it-works" className="hover:text-[#D45D27] transition-colors">Link</a>
+                    <a href="#how-it-works" className="hover:text-[#D45D27] transition-colors">How it Works</a>
                     <a href="#pricing" className="hover:text-[#D45D27] transition-colors">Link</a>
                     <a href="#testimonials" className="hover:text-[#D45D27] transition-colors">Link</a>
                     <button className="mt-2 px-4 py-2 bg-[#D45D27] text-white font-semibold rounded-full hover:bg-[#bc4a1d] transition-colors w-full">
