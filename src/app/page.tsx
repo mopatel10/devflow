@@ -3,6 +3,7 @@
 import FeaturesSection from "./_components/featureSection";
 import PhoneMockup from "./_components/phoneMockup";
 import Navbar from "./_components/navbar";
+import HowItWorks from "./_components/how-it-works";
 import HeroSection from "./_components/hero";
 import Phone1 from "../../public/phone-1.jpg";
 import Phone2 from "../../public/phone-2.jpg";
@@ -59,6 +60,7 @@ export default function PawPointLanding() {
       
       {/* Features page */}
       <FeaturesSection />
+      <HowItWorks />
     </div>
   );
 }

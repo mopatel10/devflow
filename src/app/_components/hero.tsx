@@ -5,7 +5,6 @@ import AppleLogo from "../../../public/app-store-icon.png"
 import PlayStore from "../../../public/google-play-icon.png";
 import localFont from 'next/font/local';
 
-const RoyalBrand = localFont({ src: '../../../public/fonts/RoyalBrand.ttf' })
 const Poppins = localFont({ src: '../../../public/fonts/Poppins-Regular.ttf' })
 
 export default function HeroSection(){
@@ -14,17 +13,17 @@ export default function HeroSection(){
 
     return(
         <div className="w-full md:w-1/2">
-            <h2 className={`${RoyalBrand.className} text-3xl sm:text-4xl md:text-5xl font-bold text-[#D45D27] mb-3 md:mb-4`}>Track Your Pet's Adventures</h2>
+            <h2 className={` text-3xl sm:text-4xl md:text-5xl font-bold text-[#D45D27] mb-3 md:mb-4`}>Track Your Pet's Adventures</h2>
             <p className={`${Poppins.className} text-base md:text-lg mb-4 md:mb-6`}>Keep tabs on your furry friends with PawPoint, the ultimate pet tracking and care management app for passionate pet parents.</p>
             
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8 py-5">
                 <button 
-                    className="px-4 sm:px-6 py-2 sm:py-3 bg-[#D45D27] text-white font-semibold rounded-full hover:bg-[#bc4a1d] transition-colors text-sm md:text-base"
+                    className="max-w-[200px] sm:max-w-none px-4 sm:px-6 py-2 sm:py-3 self-center bg-[#D45D27] text-white font-semibold rounded-full hover:bg-[#bc4a1d] transition-colors text-sm md:text-base"
                     onClick={() => setShowDownloadOptions(!showDownloadOptions)}
                 >
                     Download App
                 </button>
-                <button className="px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#D45D27] text-[#D45D27] font-semibold rounded-full hover:bg-[#edbea4] transition-colors text-sm md:text-base">
+                <button className="max-w-[200px] sm:max-w-none px-4 sm:px-6 py-2 sm:py-3 self-center border-2 border-[#D45D27] text-[#D45D27] font-semibold rounded-full hover:bg-[#edbea4] transition-colors text-sm md:text-base">
                     Learn More
                 </button>
             </div>
@@ -57,7 +56,7 @@ export default function HeroSection(){
                 </div>
             )}
             
-            <div className="flex flex-col sm:flex-row items-center gap-2 w-full">
+            <div className="flex flex-col sm:flex-row items-center gap-2 w-full padding">
                 <input 
                     type="email" 
                     placeholder="Enter your email" 
@@ -65,11 +64,11 @@ export default function HeroSection(){
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <button className="px-3 md:px-4 py-2 bg-[#D45D27] text-white font-semibold rounded-full hover:bg-[#bc4a1d] transition-colors mt-2 sm:mt-0 w-full sm:w-auto text-sm md:text-base">
+                <button className="md:text-md px-3 md:px-10 py-2 bg-[#D45D27] text-white font-semibold rounded-full hover:bg-[#bc4a1d] transition-colors mt-2 sm:mt-0 w-full sm:w-auto text-sm md:text-base">
                     Get Updates
                 </button>
             </div>
-            <h3 className="text-xs md:text-sm text-gray-600 mt-2"> 
+            <h3 className="text-xs md:text-sm text-gray-600"> 
                 We care about your data in our{" "}
                 <span className={`${Poppins.className} underline text-[#D45D27] hover:text-[#bc4a1d] cursor-pointer`}>
                     privacy policy

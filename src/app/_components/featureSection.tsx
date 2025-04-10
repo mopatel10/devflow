@@ -25,11 +25,11 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section id="features" className="py-10 md:py-12 px-4 md:px-16 bg-white">
+    <section id="features" className="py-10 md:py-12 px-4 md:px-16 bg-[#514236] rounded-2xl">
       <h2 className="text-2xl md:text-3xl font-bold text-center text-[#D45D27] mb-6 md:mb-12">Features</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
         {features.map((feature, index) => (
-          <div key={index} className="bg-[#F4D7B6] p-4 md:p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+          <div key={index} className="bg-[#ebd3bc] p-4 md:p-6 rounded-lg shadow-md flex flex-col items-center text-center ">
             <div className="w-12 h-12 md:w-16 md:h-16 mb-3 md:mb-4">
               <Image
                 src={feature.imageSrc}
